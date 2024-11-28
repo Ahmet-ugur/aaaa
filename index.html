@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>HFZ GARAJ</title>
   </head>
   <body>
+  
     <nav>
       <div class="container">
-        <h1 class="logo">HFZ GARAJ</h1>
+          <h1 class="logo">HFZ GARAJ</h1>
         <ul class="nav-links">
-          <li><a href="#home">Anasayfa</a></li>
-          <li><a href="#services">Hizmetlerimiz</a></li>
-          <li><a href="#appointment">Randevu Sistemi</a></li>
-          <li><a href="#contact">İletişim</a></li>
+          <li class="li"><a href="#home">Anasayfa</a></li>
+          <li class="li" ><a href="#services">Hizmetlerimiz</a></li>
+          <li class="li"><a href="#appointment">Randevu Sistemi</a></li>
+          <li class="li"><a href="#contact">İletişim</a></li>
         </ul>
       </div>
     </nav>
@@ -32,54 +34,55 @@
     </header>
 
     <section id="services">
-      <h2>Hizmetlerimiz</h2>
+      <h2 class="hizmetservis">Hizmetlerimiz</h2>
       <div class="card">  
-            <div class="image"></div>  
+        <img  class="image" src="logo1.png" alt="">
+             
             <h3>Motor Tamiri</h3>  
             <p>Motor arızalarını tespit ediyor ve tamirini sağlıyoruz.</p>  
         </div>  
         <div class="card">  
-            <div class="image"></div>  
+            <img  class="image" src="logo1.png" alt="">
             <h3>Fren Bakımı</h3>  
             <p>Fren sisteminizin güvenliği için gerekli bakımları yapıyoruz.</p>  
         </div>  
         <div class="card">  
-            <div class="image"></div>  
+            <img  class="image" src="logo1.png" alt="">
             <h3>Yağ Değişimi</h3>  
             <p>Motor yağ değişiminizi düzenli aralıklarla yaptırmanızı öneriyoruz.</p>  
         </div>  
         <div class="card">  
-            <div class="image"></div>  
+           <img  class="image" src="logo1.png" alt="">
             <h3>Ateşleme Sistemi Tamiri</h3>  
             <p>Ateşleme sisteminizi kontrol ediyor ve tamir ediyoruz.</p>  
         </div>  
         <div class="card">  
-            <div class="image"></div>  
+            <img  class="image" src="logo1.png" alt="">
             <h3>Lastik Değişimi</h3>  
             <p>Lastiklerinizin durumunu kontrol ederek güvenli bir sürüş sağlıyoruz.</p>  
         </div>  
         <div class="card">  
-            <div class="image"></div>  
+            <img  class="image" src="logo1.png" alt="">
             <h3>Akü Kontrolü</h3>  
             <p>Akülerinizi kontrol edip, gereken durumlarda değişim yapıyoruz.</p>  
         </div>  
         <div class="card">  
-            <div class="image"></div>  
+           <img  class="image" src="logo1.png" alt=""> 
             <h3>Şanzıman Tamiri</h3>  
             <p>Şanzıman sorunlarınızı tespit ediyor ve çözüyoruz.</p>  
         </div>  
         <div class="card">  
-            <div class="image"></div>  
+           <img  class="image" src="logo1.png" alt="">  
             <h3>Klima Bakımı</h3>  
             <p>Klima sisteminizi kontrol ediyor ve gerekli bakımları yapıyoruz.</p>  
         </div>  
         <div class="card">  
-            <div class="image"></div>  
+            <img  class="image" src="logo1.png" alt="">
             <h3>Suspansiyon Bakımı</h3>  
             <p>Suspansiyon sisteminizi kontrol edip gerekli bakımını yapıyoruz.</p>  
         </div>  
         <div class="card">  
-            <div class="image"></div>  
+           <img  class="image" src="logo1.png" alt="">
             <h3>Fren Hidroliği Değişimi</h3>  
             <p>Fren hidroliğinizi değiştirerek güvenliğinizi artırıyoruz.</p>  
         </div>  
@@ -106,11 +109,16 @@
         <input type="time" id="saat" name="saat" required>  
 
         <label for="islemler">Yapılacak İşlem:</label>  
-        <select id="islemler" name="islemler" required>  
-            <option value="klima_bakim">Klima Bakım</option>  
-            <option value="periyodik_bakim">Periyodik Bakım</option>  
-            <option value="oto_tamir">Oto Tamir</option>  
-            <option value="kaporta">Kaporta</option>  
+        <select id="islemler" name="islemler" required> 
+           <option value="Motor Tamiri">Seçiniz</option>  
+            <option value="Motor Tamiri">Klima Bakım</option>  
+            <option value="Fren Bakımı">Periyodik Bakım</option>  
+            <option value="Yağ Değişimi">Oto Tamir</option>  
+            <option value="Ateşleme sistemi">Ateşleme sistemi</option>  
+             <option value="Lastik Değişimi">Lastik Değişimi</option> 
+              <option value="Kaporta Tamiri">Kaporta Tamiri</option> 
+               <option value="Akü Kontrolü">Akü Kontrolü</option> 
+                <option value="Şanzıman Tamiri">Şanzıman Tamiri</option> 
             <!-- Diğer işlemleri buraya ekleyebilirsiniz -->  
         </select>  
 
@@ -122,18 +130,24 @@
     </section>
 
     <section id="contact">
-      <h1>OpenStreetMap ile Harita Örneği</h1>
+      <h1>İletişim</h1>
       <div id="map"></div>
       <h2>İletişim</h2>
       <p>Bize ulaşmak için aşağıdaki bilgileri kullanabilirsiniz:</p>
-      <p>Telefon:</p>
-      <p>Email:</p>
-      <p>Adres:  </p>
+      <p> <span style="color: red;">Telefon:</span> 0535 051 2938</p>
+      <p><span style="color: red;">E-Mail:</span></p>
+      <p><span style="color: red;">Adres:</span> Maltepe, Maltepe Maltepe kışla CD 19 Balıktan, Maltepe Kışla Cd. No:19, 34010 Zeytinburnu/İstanbul </p>
+      <a href="https://www.instagram.com/hfzgaraj/?igshid=YmMyMTA2M2Y%3D"><i class="fa fa-instagram"></i></a>
+      <a href=""><i class="fa fa-car"></i></a>
+      <a href=""><i class="fa fa-phone"></i></a>
+     
+      
+
     </section>
 
     <footer>
       <div class="container">
-        <p>&copy; 2024 Oto Tamirci. Tüm hakları saklıdır.</p>
+        <p>&copy; 2024 HFZ GARAJ. Tüm hakları saklıdır.</p>
       </div>
     </footer>
 
@@ -149,8 +163,8 @@
       }).addTo(harita);
 
       // İşaretçi ekleme
-      const işaret = L.marker([41.0082, 28.9784]).addTo(harita);
-      işaret.bindPopup("İstanbul!").openPopup();
+      const işaret = L.marker([41.032003, 28.912497]).addTo(harita);
+      işaret.bindPopup("HFZ GARAJ").openPopup();
     </script>
   </body>
 </html>
