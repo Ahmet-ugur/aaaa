@@ -64,12 +64,16 @@ h2 {
   margin: 20px 0;
 }
 #services {
-  text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  flex-wrap: wrap;
 }
-
+.carda {
+  width: 2000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .card {
   background: white;
   border-radius: 8px;
@@ -121,4 +125,40 @@ body {
   background-color: #f4f4f4;
   margin: 0;
   padding: 20px;
+}
+#appointment {
+  text-align: center;
+}
+#appointment-form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: auto;
+}
+label {
+}
+input {
+  width: 250px;
+  height: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+select {
+  width: 250px;
+  height: 40px;
+  text-align: center;
+}
+button {
+  margin-top: 25px;
+  border-radius: 25px;
+  width: 250px;
+  height: 40px;
+  background-color: #e74c3c;
+  font-size: 20px;
+  color: #fff;
+}
+button:hover {
+  background-color: aqua;
+  color: black;
 }
