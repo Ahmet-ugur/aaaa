@@ -131,16 +131,16 @@
     </section>
 
     <section id="contact">
-      <h1>İletişim</h1>
-      <div id="map"></div>
-      <h2>İletişim</h2>
-      <p>Bize ulaşmak için aşağıdaki bilgileri kullanabilirsiniz:</p>
+     
+      <h1 style="text-align: center;">İletişim</h1>
+      <p style="text-align: center;">Bize ulaşmak için aşağıdaki bilgileri kullanabilirsiniz:</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.692316512929!2d28.90990371185616!3d41.031986971227646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabb95483c7b5b%3A0xcb688d4ce731345!2sHFZ%20GARAJ%20KAPORTA%20BOYA%20MERKEZ%C4%B0!5e0!3m2!1str!2str!4v1733240410084!5m2!1str!2str" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <p> <span style="color: red;">Telefon:</span> 0535 051 2938</p>
       <p><span style="color: red;">E-Mail:</span></p>
       <p><span style="color: red;">Adres:</span> Maltepe, Maltepe Maltepe kışla CD 19 Balıktan, Maltepe Kışla Cd. No:19, 34010 Zeytinburnu/İstanbul </p>
       <a href="https://www.instagram.com/hfzgaraj/?igshid=YmMyMTA2M2Y%3D"><i class="fa fa-instagram"></i></a>
-      <a href=""><i class="fa fa-car"></i></a>
-      <a href=""><i class="fa fa-phone"></i></a>
+      <a href="https://maps.app.goo.gl/FpyfAicP119LVjes7"><i class="fa fa-car"> </i> </a>
+      <a href="tel:05350512938"><i class="fa fa-phone"></i></a>
      
       
 
@@ -153,19 +153,6 @@
     </footer>
 
     <script src="index.js"></script>
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script>
-      // Harita ve koordinat
-      const harita = L.map("map").setView([41.0082, 28.9784], 10); // İstanbul koordinatları
-
-      // OpenStreetMap yedeği
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        maxZoom: 19,
-      }).addTo(harita);
-
-      // İşaretçi ekleme
-      const işaret = L.marker([41.032003, 28.912497]).addTo(harita);
-      işaret.bindPopup("HFZ GARAJ").openPopup();
-    </script>
+   
   </body>
 </html>
