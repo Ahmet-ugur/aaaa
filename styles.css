@@ -1,14 +1,16 @@
 body {
   font-family: "Arial", sans-serif;
-  margin: 0;
+  margin: auto;
   padding: 0;
   line-height: 1.6;
+  flex-wrap: wrap;
 }
 .logo {
   text-align: center;
   font-size: 50px;
 }
 nav {
+  width: 1440px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -40,6 +42,7 @@ nav .nav-links a {
 }
 
 .hero {
+  width: 1440px;
   background: url("https://www.yilmazotoservisi.com/wp-content/uploads/2021/06/hakkimizda-banner-01.jpg")
     no-repeat center center/cover;
   color: #fff;
@@ -64,15 +67,18 @@ h2 {
   margin: 20px 0;
 }
 #services {
+  width: 1440px;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .carda {
-  width: 2000px;
+  margin: auto;
+  width: 1440px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .card {
   background: white;
