@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="hesabım.css" />
+    <title>Hesabım</title>
+  </head>
+  <body>
+    <!-- Hesabım Sayfası -->
+    <section id="hesabim" class="section">
+      <h2 style="text-align: center">Hesabım</h2>
+      <p style="text-align: center">
+        Hesap bilgilerinizi görüntüleyin, düzenleyin veya yeni üyelik oluşturun.
+      </p>
+
+      <!-- Sekmeler -->
+      <div class="tabs">
+        <button class="tab-button active" data-tab="giris">Üye Girişi</button>
+        <button class="tab-button" data-tab="kayit">Yeni Üyelik</button>
+      </div>
+
+      <!-- Üye Girişi Sekmesi -->
+      <div class="tab-content active" id="giris">
+        <h3>Üye Girişi</h3>
+        <form id="giris-form">
+          <label for="login-email">E-posta:</label>
+          <input
+            type="email"
+            id="login-email"
+            required
+            placeholder="E-postanızı girin"
+          />
+
+          <label for="login-password">Şifre:</label>
+          <input
+            type="password"
+            id="login-password"
+            required
+            placeholder="Şifrenizi girin"
+          />
+
+          <button type="submit">Giriş Yap</button>
+        </form>
+      </div>
+
+      <!-- Yeni Üyelik Sekmesi -->
+      <div class="tab-content" id="kayit">
+        <h3>Yeni Üyelik Oluştur</h3>
+        <form id="kayit-form">
+          <label for="register-name">Adınız Soyadınız:</label>
+          <input
+            type="text"
+            id="register-name"
+            required
+            placeholder="Adınızı ve soyadınızı girin"
+          />
+
+          <label for="register-email">E-posta:</label>
+          <input
+            type="email"
+            id="register-email"
+            required
+            placeholder="E-postanızı girin"
+          />
+
+          <label for="register-password">Şifre:</label>
+          <input
+            type="password"
+            id="register-password"
+            required
+            placeholder="Şifrenizi belirleyin"
+          />
+
+          <label for="register-password-confirm">Şifre (Tekrar):</label>
+          <input
+            type="password"
+            id="register-password-confirm"
+            required
+            placeholder="Şifrenizi tekrar girin"
+          />
+
+          <button type="submit">Kayıt Ol</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="hesabım.js"></script>
+  </body>
+</html>

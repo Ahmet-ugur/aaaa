@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <title>Artek Printer</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img
+          src="İmage/WhatsApp Görsel 2024-12-15 saat 21.28.59_6e13d747.jpg"
+          style="width: 150px"
+          alt=""
+        />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#anasayfa">Anasayfa</a></li>
+          <li><a href="#hizmetler">Hizmetler</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#destek">Destek</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+          <li><a href="#kampanyalar">Kampanyalar</a></li>
+          <li><a href="Hesabım.html">Hesabım</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Anasayfa -->
+    <section id="anasayfa" class="section">
+      <h1>Hoşgeldiniz</h1>
+      <p>3D baskı ve tasarımda yaratıcı çözümler sunuyoruz.</p>
+      <img
+        src="İmage/WhatsApp Görsel 2024-12-15 saat 21.28.59_6e13d747.jpg"
+        style="width: 400px; height: 200px"
+        alt="3D Baskı Görsel"
+      />
+    </section>
+    <!-- Hizmetler -->
+    <section id="hizmetler" class="section">
+      <h2>Hizmetlerimiz</h2>
+      <div class="services-container">
+        <!-- Hizmet 1 -->
+        <div class="service-item">
+          <img src="https://via.placeholder.com/300" alt="3D Modelleme" />
+          <h3>3D Modelleme</h3>
+          <p>
+            Projeniz için detaylı ve yüksek kaliteli 3D modeller tasarlıyoruz.
+          </p>
+          <ul>
+            <li>Özel ürün tasarımları</li>
+            <li>Endüstriyel modelleme</li>
+            <li>Sanatsal projeler</li>
+          </ul>
+          <button class="service-btn" data-service="3D Modelleme">
+            Detaylı İncele
+          </button>
+        </div>
+
+        <!-- Hizmet 2 -->
+        <div class="service-item">
+          <img src="https://via.placeholder.com/300" alt="3D Baskı" />
+          <h3>3D Baskı Hizmeti</h3>
+          <p>Yüksek kaliteli ve dayanıklı 3D baskı hizmetleri sunuyoruz.</p>
+          <ul>
+            <li>PLA, ABS, Resin baskı seçenekleri</li>
+            <li>Hızlı teslimat</li>
+            <li>Yüksek hassasiyetli üretim</li>
+          </ul>
+          <button class="service-btn" data-service="3D Baskı Hizmeti">
+            Detaylı İncele
+          </button>
+        </div>
+
+        <!-- Hizmet 3 -->
+        <div class="service-item">
+          <img src="https://via.placeholder.com/300" alt="Prototipleme" />
+          <h3>Prototipleme</h3>
+          <p>
+            Hızlı ve ekonomik prototipleme çözümlerimizle fikirlerinizi hayata
+            geçirin.
+          </p>
+          <ul>
+            <li>Fonksiyonel prototip üretimi</li>
+            <li>Erken ürün testi imkanı</li>
+            <li>Kısa sürede prototip teslimi</li>
+          </ul>
+          <button class="service-btn" data-service="Prototipleme">
+            Detaylı İncele
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="service-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-service-title"></h2>
+        <p id="modal-service-details"></p>
+      </div>
+    </div>
+    <!-- Blog Sayfası -->
+    <section id="blog" class="section">
+      <h2>Blog</h2>
+      <div class="blog-container">
+        <!-- Blog 1 -->
+        <div class="blog-item">
+          <img src="https://via.placeholder.com/300" alt="Blog Görseli" />
+          <h3>3D Baskı Nedir?</h3>
+          <p class="blog-summary">
+            3D baskı teknolojisinin nasıl çalıştığını öğrenin ve projelerinizde
+            nasıl kullanabileceğinizi keşfedin...
+          </p>
+          <button class="blog-btn" data-blog="3D Baskı Nedir?">
+            Devamını Oku
+          </button>
+        </div>
+
+        <!-- Blog 2 -->
+        <div class="blog-item">
+          <img src="https://via.placeholder.com/300" alt="Blog Görseli" />
+          <h3>3D Modelleme ile Ürün Geliştirme</h3>
+          <p class="blog-summary">
+            Ürün fikirlerinizi hayata geçirme sürecinde 3D modellemenin nasıl
+            katkı sağladığını inceleyin...
+          </p>
+          <button class="blog-btn" data-blog="3D Modelleme ile Ürün Geliştirme">
+            Devamını Oku
+          </button>
+        </div>
+
+        <!-- Blog 3 -->
+        <div class="blog-item">
+          <img src="https://via.placeholder.com/300" alt="Blog Görseli" />
+          <h3>Prototipleme Süreci</h3>
+          <p class="blog-summary">
+            Fikirlerinizi test etmek için hızlı ve uygun maliyetli prototipleme
+            yöntemlerini keşfedin...
+          </p>
+          <button class="blog-btn" data-blog="Prototipleme Süreci">
+            Devamını Oku
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Modal -->
+    <div id="blog-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-blog-title"></h2>
+        <p id="modal-blog-content"></p>
+      </div>
+    </div>
+    <!-- Destek Sayfası -->
+    <section id="destek" class="section">
+      <h2>Destek</h2>
+      <p>
+        Her türlü soru ve destek talebiniz için bizimle iletişime
+        geçebilirsiniz.
+      </p>
+
+      <!-- İletişim Formu -->
+      <div class="contact-form">
+        <h3>Bize Ulaşın</h3>
+        <form id="support-form">
+          <label for="name">Adınız:</label>
+          <input type="text" id="name" placeholder="Adınızı girin" required />
+
+          <label for="email">E-posta:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="E-posta adresinizi girin"
+            required
+          />
+
+          <label for="message">Mesajınız:</label>
+          <textarea
+            id="message"
+            rows="5"
+            placeholder="Destek talebinizi buraya yazın"
+            required
+          ></textarea>
+
+          <button type="submit">Gönder</button>
+        </form>
+      </div>
+
+      <!-- Sıkça Sorulan Sorular -->
+      <div class="faq">
+        <h3>Sıkça Sorulan Sorular</h3>
+        <div class="faq-item">
+          <button class="faq-question">3D baskı süresi ne kadar sürer?</button>
+          <div class="faq-answer">
+            3D baskı süresi, projenin boyutuna ve detayına bağlıdır. Küçük
+            projeler genellikle birkaç saat sürerken, büyük projeler birkaç gün
+            sürebilir.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Hangi malzemeleri kullanıyorsunuz?
+          </button>
+          <div class="faq-answer">
+            PLA, ABS ve Resin gibi malzemeler kullanıyoruz. İhtiyacınıza göre en
+            uygun malzeme türünü seçebilirsiniz.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Destek talebime ne zaman yanıt alırım?
+          </button>
+          <div class="faq-answer">
+            Destek taleplerinize genellikle 24 saat içinde yanıt veriyoruz.
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- İletişim Sayfası -->
+    <section id="iletisim" class="section">
+      <h2>İletişim</h2>
+      <p>Her türlü sorunuz için bizimle iletişime geçmekten çekinmeyin.</p>
+
+      <div class="contact-container">
+        <!-- İletişim Bilgileri -->
+        <div class="contact-info">
+          <h3>İletişim Bilgileri</h3>
+          <ul>
+            <li>
+              <strong>Telefon:</strong>
+              <a href="tel:+905001234567">+90 500 123 45 67</a>
+            </li>
+            <li>
+              <strong>E-posta:</strong>
+              <a href="mailto:destek@3dbaski.com">destek@3dbaski.com</a>
+            </li>
+            <li>
+              <strong>Adres:</strong> Gaziantep Üniversitesi,
+              Şehitkamil/Gaziantep
+            </li>
+          </ul>
+          <iframe
+            src="https://maps.google.com/maps?q=Gaziantep%20University&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+
+        <!-- İletişim Formu -->
+        <div class="contact-form">
+          <h3>Bize Ulaşın</h3>
+          <form id="contact-form">
+            <label for="name">Adınız:</label>
+            <input type="text" id="name" placeholder="Adınızı girin" required />
+
+            <label for="email">E-posta:</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="E-posta adresinizi girin"
+              required
+            />
+
+            <label for="subject">Konu:</label>
+            <input
+              type="text"
+              id="subject"
+              placeholder="Konu başlığını yazın"
+              required
+            />
+
+            <label for="message">Mesajınız:</label>
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="Mesajınızı buraya yazın"
+              required
+            ></textarea>
+
+            <button type="submit">Gönder</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Kampanyalar Sayfası -->
+    <section id="kampanyalar" class="section">
+      <h2>Kampanyalar</h2>
+      <p>En güncel kampanyalarımızdan faydalanın!</p>
+
+      <!-- Arama ve Filtreleme -->
+      <div class="kampanya-search">
+        <input type="text" id="search-input" placeholder="Kampanya ara..." />
+        <button id="search-button">Ara</button>
+      </div>
+
+      <!-- Kampanya Kartları -->
+      <div id="kampanya-container" class="kampanya-container">
+        <!-- Örnek Kampanya Kartı -->
+        <div class="kampanya-card" data-category="indirim">
+          <h3>3D Baskı %20 İndirim Kampanyası</h3>
+          <p>
+            3D baskı siparişlerinizde %20 indirim fırsatını kaçırmayın. Kampanya
+            30 Haziran'a kadar geçerlidir.
+          </p>
+          <span class="kampanya-date">Son Tarih: 30 Haziran 2024</span>
+        </div>
+
+        <div class="kampanya-card" data-category="ücretsiz">
+          <h3>Ücretsiz Kargo Fırsatı</h3>
+          <p>
+            Tüm siparişlerinizde ücretsiz kargo imkanı sunuyoruz. Kampanya
+            sınırlı bir süre için geçerli.
+          </p>
+          <span class="kampanya-date">Son Tarih: 15 Temmuz 2024</span>
+        </div>
+
+        <div class="kampanya-card" data-category="hediye">
+          <h3>Hediye PLA Filament</h3>
+          <p>
+            500 TL üzeri alışverişlerinizde hediye 1 kg PLA filament kazanın.
+          </p>
+          <span class="kampanya-date">Son Tarih: 1 Ağustos 2024</span>
+        </div>
+
+        <div class="kampanya-card" data-category="indirim">
+          <h3>Öğrencilere Özel %15 İndirim</h3>
+          <p>
+            Öğrencilere özel %15 indirim fırsatı. Öğrenci kimliğinizi gösterin,
+            indirimden yararlanın.
+          </p>
+          <span class="kampanya-date">Son Tarih: 31 Temmuz 2024</span>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Şirket Bilgisi -->
+        <div class="footer-section about">
+          <h2>Hakkımızda</h2>
+          <p>
+            ARTEK PRİNTER Siteniz. Yüksek kaliteli baskı çözümleri,
+            kişiselleştirilmiş tasarımlar ve hızlı teslimat hizmeti sunuyoruz.
+          </p>
+          <div class="contact">
+            <p><i class="fas fa-map-marker-alt"></i> Gaziantep, Türkiye</p>
+            <p><i class="fas fa-envelope"></i> info@artekprinter.com</p>
+            <p><i class="fas fa-phone"></i> +90 500 123 45 67</p>
+          </div>
+        </div>
+
+        <!-- Hızlı Linkler -->
+        <div class="footer-section links">
+          <h2>Hızlı Bağlantılar</h2>
+          <ul>
+            <li><a href="#anasayfa">Anasayfa</a></li>
+            <li><a href="#hizmetler">Hizmetler</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#destek">Destek</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+            <li><a href="#kampanyalar">Kampanyalar</a></li>
+            <li><a href="#hesabim">Hesabım</a></li>
+          </ul>
+        </div>
+
+        <!-- Sosyal Medya -->
+        <div class="footer-section social">
+          <h2>Bizi Takip Edin</h2>
+          <p>
+            Sosyal medya hesaplarımızdan bizi takip ederek yeniliklerden
+            haberdar olun.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Telif Hakkı -->
+      <div class="footer-bottom">
+        <p>&copy; 2024 ARTEK PRİNTER | Tüm Hakları Saklıdır.</p>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
